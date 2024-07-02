@@ -1,0 +1,50 @@
+<!-- /******************************************************************************
+***
+* WEB422 – Assignment 1
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. 
+* No part of this assignment has been copied manually or electronically from any other source
+* (including web sites) or distributed to other students.
+* 
+* Name:Ali Rezk   Student ID: 105593222   Date: 2024-05-28
+*
+******************************************************************************
+**/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <img class="weather-icon" src="./img/R.png" alt="Weather Icon">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="search-box-container">
+            <div class="search-box mt-3">
+                <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
+                <button id="searchBtn" class="btn btn-primary mt-2">Search</button>
+                <div id="error-message" class="text-danger mt-2"></div>
+            </div>
+        </div>
+        
+        <div class="form-group mt-3">
+            <label for="languageSelect">Language:</label>
+            <select id="languageSelect" class="form-control">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="ar">Arabic</option>
+              
+            </select>
+        </div>
+        <div id="weatherDisplay" class="mt-4"></div>
+        <div id="pagination" class="mt-4"></div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
